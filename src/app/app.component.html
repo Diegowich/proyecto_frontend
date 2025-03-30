@@ -1,0 +1,42 @@
+
+<nav class="bg-blue-800 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="icon.png" alt="Logo" class="h-10 w-10 mr-2" @fadeInLeft />
+        <a routerLink="/" class="text-white font-bold text-xl"@fadeInLeft >          
+          TechLogistics S.A.
+        </a>
+      </div>
+        
+      <ul class="flex space-x-4">
+          <li >
+            <a [routerLink]="['registration']" routerLinkActive="active"
+               class="text-gray-300 hover:text-white px-3 py-2 rounded-md font-medium">
+                Registrar pedido
+            </a>
+          </li>
+          <li >
+            <a [routerLink]="['search']" routerLinkActive="active"
+               class="text-gray-300 hover:text-white px-3 py-2 rounded-md font-medium">
+                Buscar pedido
+            </a>
+          </li>
+        
+      
+        <li >
+            <a [routerLink]="['update']" routerLinkActive="active"
+               class="text-gray-300 hover:text-white px-3 py-2 rounded-md font-medium">
+                Actualizar estado de pedidos
+            </a>
+          </li>
+          <li >
+            <a [routerLink]="['delete']" routerLinkActive="active"
+               class="text-gray-300 hover:text-white px-3 py-2 rounded-md font-medium">
+                Borrar pedido
+            </a>
+          </li>
+      </ul>
+      </div>
+  </nav>
+  
+<router-outlet />

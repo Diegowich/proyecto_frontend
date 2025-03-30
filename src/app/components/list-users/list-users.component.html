@@ -1,0 +1,8 @@
+<ul *ngFor="let user of users" class="space-y-2">
+    <li class="border border-gray-300 bg-gray-100 p-4 rounded-lg shadow-sm">
+        <span class="font-semibold text-gray-700">ID:</span> {{ user._id }}
+    </li>
+    <li class="border border-gray-300 bg-gray-100 p-4 rounded-lg shadow-sm">
+        <span class="font-semibold text-gray-700">Username:</span> {{ user.username }}
+    </li>
+</ul>
